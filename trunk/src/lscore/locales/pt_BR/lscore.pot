@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-01-30 15:01+BRST\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: utf-8\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: MainWindow.py:34
+msgid "untitled"
+msgstr "sem título"
+
+msgid "Result"
+msgstr "Resultado"
+
+#: MainWindow.py:86
+msgid "_File"
+msgstr "_Arquivo"
+
+#: MainWindow.py:98
+msgid "_Score"
+msgstr "_Partitura"
+
+#: MainWindow.py:103
+msgid "_Graphics"
+msgstr "_Desenho"
+
+msgid "_Iterate"
+msgstr "_Iterar"
+
+#: MainWindow.py:119
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: MainWindow.py:160
+msgid "Score"
+msgstr "Partitura"
+
+#: MainWindow.py:164
+msgid "Graphics"
+msgstr "Desenho"
+
+#: MainWindow.py:173
+msgid "Open an existing file"
+msgstr "Abre um arquivo existente"
+
+#: MainWindow.py:174
+msgid "Save the current file"
+msgstr "Salva o arquivo atual"
+
+#: MainWindow.py:175
+msgid "Create a new score with the current file"
+msgstr "Cria uma nova partitura com o arquivo atual"
+
+#: MainWindow.py:177
+msgid "Interpret the current file as a turtle graphics description"
+msgstr "Interpreta o arquivo atual como uma descrição em turtle graphics"
+
+#: MainWindow.py:182
+msgid "Save changes to '%s'?"
+msgstr "Deseja salvar as mudanças no arquivo '%s'?"
+
+#: MainWindow.py:187
+msgid "Close without saving"
+msgstr "Fechar sem salvar"
+
+
+#: MainWindow.py:190
+msgid "Enter the number of iterations:"
+msgstr "Informe o número de iterações"
+
+#: MainWindow.py:236
+msgid "Iterate"
+msgstr "Iterar"
+#: MainWindow.py:221
+msgid "Cannot open file '%s': %s"
+msgstr "Não foi possível abrir '%s': %s"
+
+#: MainWindow.py:264
+msgid "Error writing to '%s': %s"
+msgstr "Erro ao escrever para '%s': %s"
+
+#: MainWindow.py:306
+msgid "A program to create music and graphics from L-Systems."
+msgstr "Um programa para criar música e\n desenhos a partir de L-Systems"
+
+#: ScoreDialog.py:35
+msgid "Score Generation"
+msgstr "Geração de Partitura"
+
+#: ScoreDialog.py:52
+msgid "Go!"
+msgstr "Gerar!"
+
+#: ScoreDialog.py:82
+msgid "<b>Rendering</b>"
+msgstr "<b>Renderização</b>"
+
+#: ScoreDialog.py:94
+msgid "Method"
+msgstr "Método"
+
+#: ScoreDialog.py:104
+msgid "Instrument Number"
+msgstr "Instrumento"
+
+#: ScoreDialog.py:112
+msgid "Tempo"
+msgstr "Tempo"
+
+#: ScoreDialog.py:120
+msgid "Tempo Multiplier"
+msgstr "Multiplicador"
+
+#: ScoreDialog.py:136
+msgid "<b>Notes</b>"
+msgstr "<b>Notas</b>"
+
+#: ScoreDialog.py:145
+msgid "Scale"
+msgstr "Escala"
+
+#: ScoreDialog.py:158
+msgid "Transpose"
+msgstr "Transposição"
+
+#: ScoreDialog.py:166
+msgid "Mode"
+msgstr "Modo"
+
+#: ScoreDialog.py:176
+msgid "Octave"
+msgstr "Oitava"
+
+#: ScoreDialog.py:182
+msgid "Start"
+msgstr "Início"
+
+#: ScoreDialog.py:190
+msgid "Upper Bound"
+msgstr "Limite Superior"
+
+#: ScoreDialog.py:198
+msgid "Lower Bound"
+msgstr "Limite Inferior"
+
+#: ScoreDialog.py:211
+msgid "<b>Misc</b>"
+msgstr "<b>Miscelânea</b>"
+
