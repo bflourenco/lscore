@@ -35,17 +35,12 @@ class GeneticOperators:
 		if type == 0:
 			sucessor1_len = len(sucessor1)
 			sucessor2_len = len(sucessor2)
-			#u1 = random.randint(0,sucessor1_len - 1)
-			#u2 = random.randint(0,sucessor1_len - 1)
+			u1 = random.randint(0,sucessor1_len - 1)
+			u2 = random.randint(0,sucessor1_len - 1)
 			
-			u1 = 1
-			u2 = 5
 			
-			v1 = 1
-			v2 = 3
-			
-			#v1 = random.randint(0,sucessor2_len - 1)
-			#v2 = random.randint(0,sucessor2_len - 1)
+			v1 = random.randint(0,sucessor2_len - 1)
+			v2 = random.randint(0,sucessor2_len - 1)
 			
 			min1 = u1
 			max1 = u2
