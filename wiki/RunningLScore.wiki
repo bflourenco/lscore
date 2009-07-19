@@ -1,0 +1,8 @@
+#summary How to run LScore
+
+= Dependencies =
+*pygtk and pygtksourceview2 - (for the GTK interface)
+
+= Downloading the Files = 
+
+= Details =
