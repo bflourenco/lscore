@@ -29,7 +29,7 @@ class LRule:pass
 
 
 class LSystem:
-	def __init__(self,axiom,globals = {}, locals = {}, seed = None):
+	def __init__(self,axiom,globals = {}, locals = {}, seed = None, mutation_pool = None, mutation_ignore = None):
 		self.axiom = axiom
 		self.var_globals = globals
 		self.var_locals = locals
@@ -40,7 +40,14 @@ class LSystem:
 		self.var_locals['mutation'] = self.__mutation
 		self.seed = time.time()
 		if seed is not None:
-			self.seed = seed 
+			self.seed = seed
+		self.mutation_pool = ['F','+','-']
+		if mutation_pool is not None:
+			self.mutation_pool = mutation_pool
+		
+		self.mutation_ignore = set(['(',')','[',']']),
+		if mutation_ignore is not None:
+			self.mutation_ignore = mutation_ignore
 		random.seed(self.seed)
 	""" Add a rule to the l-system
 
@@ -123,7 +130,7 @@ class LSystem:
 		self.rules[rule1].sucessor,self.rules[rule2].sucessor = self.genetic_operators.crossover(self.rules[rule1].sucessor,self.rules[rule2].sucessor,type)	
 	
 	def __mutation(self,rule,mutation_rate = 0.2):
-		self.rules[rule].sucessor = self.genetic_operators.mutation(self.rules[rule].sucessor,mutation_rate)
+		self.rules[rule].sucessor = self.genetic_operators.mutation(self.rules[rule].sucessor,mutation_rate,self.mutation_ignore,self.mutation_pool)
 	
 	def derive(self, level):
 		i = 0

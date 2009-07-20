@@ -92,7 +92,9 @@ The result will be A(4), A(5), A(8), A(34)...
 class Parser:
 	def __init__(self):
 		self.var_globals = {}
-		self.var_locals = {}		
+		self.var_locals = {}
+		self.mutation_pool = None
+		self.mutation_ignore = None		
 	
 	""" Parse a string and return a LSystem object (see lsystem.py)
 	
@@ -115,11 +117,17 @@ class Parser:
 		if 'seed' in self.var_locals:
 			seed = self.var_locals['seed']
 			
-					
+		if 'mutation_pool' in self.var_locals:
+			self.mutation_pool = self.var_locals['mutation_pool']
+			
+		if 'mutation_ignore' in self.var_locals:
+			self.mutation_ignore = self.var_locals['mutation_ignore']
 		lsystem = LSystem(self.var_locals['axiom'],
 								  self.var_globals,
 								  self.var_locals,
-								  seed)
+								  seed,
+								  self.mutation_pool,
+								  self.mutation_ignore)
 		#TODO: Instead of calling replace twice, write code to 
 		#replaces both ' ' and '\t' at the same time
 		rules = rules.replace(' ','')
