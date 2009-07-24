@@ -7,7 +7,7 @@
 = Downloading the Files = 
 Download the files from the subversion repository:
 
-svn checkout http://lscore.googlecode.com/svn/trunk/ lscore-read-only
+svn checkout http://lscore.googlecode.com/svn/trunk/ lscore
 
 = Details =
 To run the program: 
@@ -27,14 +27,14 @@ predecessor:condition:probability:sucessor
 .
 
 Examples: 
-the hilbert curve:
+The Hilbert Curve:
 {{{
 axiom = '-X'
 rules:
 X:1:1:-YF+XFX+FY-
 Y:1:1:+XF-YFY-FX+
 }}}
-context-sensitive(abop, page 35-b):
+Context-Sensitive(abop, page 35-b):
 
 {{{
 axiom = "F1F1F1"
@@ -51,7 +51,7 @@ rules:
 +:1:1:-
 -:1:1:+
 }}}
-parametric:
+Parametric:
 {{{
 axiom = 'B(2)A(4,4)'
 rules:
